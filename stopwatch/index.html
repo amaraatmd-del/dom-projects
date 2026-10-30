@@ -39,19 +39,68 @@
       
 <div class="flex flex-1 items-center justify-center py-10">
         <!-- Endees ehel -->
-          <div class="flex min-h-screen items-center justify-center bg-[#101714] font-sans text-[#F0FDF4]">
-    <div class="w-[620px] rounded-[28px] border border-white/10 bg-[#19231E8C] h-[551px] p-12">
-      <div class="mb-8 flex h-14 w-16 items-center justify-center rounded-[16px] bg-[#4ADE80]/15 text-[#4ADE80] text">
-      <i class="fa-regular fa-clock"></i>
+          <div class="flex min-h-screen items-center justify-center bg-[#101714] font-sans text-[#F2F5EE]">
+    <div class="w-[620px] rounded-[28px] border border-white/10 bg-[#19231E8C] p-[40px]">
+      <div class="flex items-start justify-between">
+        <div class="flex h-[44px] w-[44px] items-center justify-center rounded-[12px] bg-[#B5CBB21A] text-[#C5D9BD]">
+          <i class="fa-solid fa-stopwatch"></i>
+        </div>
+        <div id="state" class="rounded-full border border-white/10 bg-[#1D2622] px-[14px] py-[6px] text-[12px] text-[#C5D9BD]">
+          Ready
+        </div>
       </div>
-      <div class="asd">
-        <div class="text-[28px] font-semibold text-[#F0FDF4]">Password generator</div>
-        <div class="mt-2 text-[14px] text-[#A4B9AD]">A strong password. One click away.</div>
+      <div class="mt-[28px] text-[40px] font-regular leading-none">Stopwatch</div>
+      <div class="mt-[16px] text-[14px] text-[#A4B9AD]">Make time for what matters.</div>
+
+      <div class="mt-[40px] h-px w-full bg-[#B5CBB226]"></div>
+      <div class="flex items-center justify-between px-[16px] py-[40px]">
+        <div class="flex w-[120px] flex-col items-center">
+          <div id="hours" class="font-mono text-[56px] leading-none text-[#EDF3E8]">00</div>
+          <div class="mt-[16px] text-[9px] tracking-[2px] text-[#9BAD9E]">HOURS</div>
+        </div>
+
+        <div class="flex flex-col gap-[10px] pb-[28px]">
+          <div class="h-[6px] w-[6px] rounded-full bg-[#6B7A71]"></div>
+          <div class="h-[6px] w-[6px] rounded-full bg-[#6B7A71]"></div>
+        </div>
+
+        <div class="flex w-[120px] flex-col items-center">
+          <div id="minutes" class="font-mono text-[56px] leading-none text-[#EDF3E8]">00</div>
+          <div class="mt-[16px] text-[9px] tracking-[2px] text-[#9BAD9E]">MINUTES</div>
+        </div>
+
+        <div class="flex flex-col gap-[10px] pb-[28px]">
+          <div class="h-[6px] w-[6px] rounded-full bg-[#6B7A71]"></div>
+          <div class="h-[6px] w-[6px] rounded-full bg-[#6B7A71]"></div>
+        </div>
+
+        <div class="flex w-[120px] flex-col items-center">
+          <div id="seconds" class="font-mono text-[56px] leading-none text-[#EDF3E8]">00</div>
+          <div class="mt-[16px] text-[9px] tracking-[2px] text-[#9BAD9E]">SECONDS</div>
+        </div>
       </div>
-    
+
+      <div class="h-px w-full bg-white/10"></div>
+      <div class="mt-[32px] flex gap-[12px]">
+        <button id="start-button" type="button"
+          class="h-[48px] w-[258px] cursor-pointer disabled rounded-[14px] bg-[#B5CBB2] text-[14px] font-semibold text-[#102418] transition-colors hover:bg-[#c6d8c6] disabled:cursor-not allowed disabled:opacity-35">
+          Start
+        </button>
+        <button id="stop-button" type="button"
+          class="h-[48px] w-[129px] cursor-pointer disabled rounded-[14px] border border-white/10 bg-[#FFFFFF0D] text-[14px] text-[#DCECE2] transition-colors hover:bg-[#222C27] disabled:cursor-not allowed disabled:opacity-35">
+          Pause
+        </button>
+        <button id="reset-button" type="button"
+          class="h-[48px] w-[129px] cursor-pointer disabled rounded-[14px] border border-white/10 bg-[#19231E8C] text-[14px] text-[#A4B9AD] transition-colors hover:bg-[#222C27] disabled:cursor-not allowed disabled:opacity-35">
+          Reset
+        </button>
+      </div>
+
+      <div class="mt-[24px] text-center text-[12px] text-[#8AA294]">
+        A moment of focus. At your own pace.
+      </div>
     </div>
+  <div>
+  </div>
   </body>
 </html>
-</html>
-
-      
