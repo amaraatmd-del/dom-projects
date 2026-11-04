@@ -7,6 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="index.js" defer></script>
   </head>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   <body class="min-h-screen min-w-[1000px] bg-[#09090b] font-sans text-[#f4f4f5]">
     <div class="mx-auto flex min-h-screen w-[920px] flex-col">
       <header class="flex h-24 shrink-0 items-center justify-between border-b border-[#d9f99d]/10">
@@ -26,33 +30,39 @@
 
 <div class="flex flex-1 items-center justify-center py-10">
         <!-- Endees ehel -->
-         <div class="flex min-h-screen items-center justify-center bg-[#09090B] p-6 font-sans text-[#F2F5EE]">
-            <div id="reaction" class="w-full max-w-[576px] rounded-[24px] border border-white/10 bg-[#18181B] p-8 sm:p-12">
-                        <div class="text-[28px] font-semibold">Reaction time</div>
-                        <div class="mt-2 text-[14px] text-[#A1A1AA]">Wait for green, then click as quickly as you can.</div>
+        <div class="flex flex-1 items-center justify-center py-10">
+        <div class="w-full max-w-[576px] rounded-[24px] border border-white/10 bg-[#18181B] p-8 sm:p-12">
+          <div class="text-[28px] font-semibold">Reaction time</div>
+          <div class="mt-2 text-[14px] text-[#A1A1AA]">Wait for green, then click as quickly as you can.</div>
 
-                <div  id="second" class="mt-6 flex h-[240px] cursor-pointer select-none flex-col items-center justify-center gap-2 rounded-[24px] bg-[#27272A]">
-                        <svg id="third" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target preview-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                        <div id="Title" class="text-[26px] font-semibold">Ready when you are</div>
-                        <div class="text-[16px]">Click to start</div>
+          <button
+            id="second"
+            type="button"
+            class="mt-6 flex h-[240px] w-full cursor-pointer select-none flex-col items-center justify-center gap-2 rounded-[24px] bg-[#27272A] text-[#F4F4F5] transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d9f99d]"
+          >
+            <div id="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
             </div>
+            <div id="title" class="text-[26px] font-semibold">Ready when you are</div>
+            <div id="subtitle" class="text-[16px]">Click to start</div>
+          </button>
 
-              <div class="mt-4 grid grid-cols-2 gap-3">
-                <div id="last" class="rounded-[18px] bg-[#27272A] px-3 py-5 text-center">
-                            <div class="text-[22px] font-semibold leading-[30px] text-[#E8F5A5]">—</div>
-                            <div class="mt-1.5 text-[14px] text-[#A1A1AA]">Last attempt</div>
-                </div>
-                <div id="best" class="rounded-[18px] bg-[#27272A] px-3 py-5 text-center">
-                            <div class="text-[22px] font-semibold leading-[30px] text-[#E8F5A5]">—</div>
-                            <div class="mt-1.5 text-[14px] text-[#A1A1AA]">Best this session</div>
-                </div>
-                </div>
-              <div class="mx-2 mt-5 text-center text-[14px] leading-relaxed text-[#A1A1AA]">
-                Click the panel, or focus it and press Space or Enter. Clicking before green ends the attempt.
-              </div>
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            <div class="rounded-[18px] bg-[#27272A] px-3 py-5 text-center">
+              <div id="last" class="text-[22px] font-semibold leading-[30px] text-[#E8F5A5]">—</div>
+              <div class="mt-1.5 text-[14px] text-[#A1A1AA]">Last attempt</div>
             </div>
+            <div class="rounded-[18px] bg-[#27272A] px-3 py-5 text-center">
+              <div id="best" class="text-[22px] font-semibold leading-[30px] text-[#E8F5A5]">—</div>
+              <div class="mt-1.5 text-[14px] text-[#A1A1AA]">Best this session</div>
+            </div>
+          </div>
+
+          <div class="mx-2 mt-5 text-center text-[12px] leading-relaxed text-[#A1A1AA]">
+            Click the panel, or focus it and press Space or Enter. Clicking before green ends the attempt.
+          </div>
         </div>
       </div>
+    </div>
   </body>
 </html>
- 
